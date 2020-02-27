@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Best US MOVING - NEW HOME IS WHERE YOUR STORY BEGINS' || process.env.npm_package_name,
+    title: 'BEST US MOVING - NEW HOME IS WHERE YOUR STORY BEGINS' || process.env.npm_package_name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,7 +19,7 @@ export default {
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'img/favicons/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', sizes: '96x96', href: 'img/favicons/favicon-96x96.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'img/favicons/favicon-16x16.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap' }
     ],
   },
   /*

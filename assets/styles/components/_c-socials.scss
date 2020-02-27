@@ -1,0 +1,14 @@
+ul.c-socials {
+  display: flex;
+  flex-direction: row;
+  li { margin-left: 18px; }
+  a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    &.twitter { background-image: url('/img/icons/ico-twitter.svg'); }
+    &.facebook { background-image: url('/img/icons/ico-facebook.svg'); }
+  }
+}
