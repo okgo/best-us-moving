@@ -1,17 +1,17 @@
 <template lang="pug">
 ul.c-contacts
   li
-    a(href="tel:773-691-4361")
+    a(href="tel:83 38 BEST US")
       phone-ico
-      |773-691-4361
+      |83 38 BEST US
   li
-    a(href="tel:773-691-4361")
+    a(href="tel:833 238 7887")
       phone-ico
-      |773-691-4361
+      |833 238 7887
   li
-    a(href="mailto:glen.lane@example.com")
+    a(href="mailto:alldirectionsleads@gmail.com")
       letter-ico
-      |glen.lane@example.com
+      |alldirectionsleads@gmail.com
 </template>
 
 <script>

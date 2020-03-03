@@ -61,6 +61,7 @@ h6 {
 h1 {
   font-size: 48px;
   font-weight: 900;
+  color: $white-color;
 }
 
 h2 {
@@ -77,6 +78,7 @@ h3 {
 h4 {
   font-size: 32px;
   color: $white-color;
+  font-weight: 500;
 }
 
 h5 {
@@ -235,4 +237,19 @@ main.main { position: relative; }
   background: url('/img/logo.png');
   background-size: 100% 100%;
   opacity: 1 !important;
+}
+
+.green-mask {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(#386912, .8);
+  }
+  > * { position: relative; }
 }
