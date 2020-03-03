@@ -16,9 +16,24 @@
     overflow: hidden;
     border-radius: 10px;
     background-size: cover;
-    &.interstate-moves { background-image: url('/img/interstate-moves.jpg'); }
-    &.commercial-moves { background-image: url('/img/commercial-moves.jpg'); }
-    &.warehousing { background-image: url('/img/warehousing.jpg'); }
+    &.interstate-moves {
+      background-image: url('/img/interstate-moves.jpg');
+      h5 {
+        &::before { background-image: url('/img/icons/ico-interstate-moves.png'); }
+      }
+    }
+    &.commercial-moves {
+      background-image: url('/img/commercial-moves.jpg');
+      h5 {
+        &::before { background-image: url('/img/icons/ico-commercial-moves.png'); }
+      }
+    }
+    &.warehousing {
+      background-image: url('/img/warehousing.jpg');
+      h5 {
+        &::before { background-image: url('/img/icons/ico-warehousing.png'); }
+      }
+    }
     &::before {
       content: '';
       display: block;
@@ -72,6 +87,19 @@
       }
       &:hover {
         svg { right: 0; }
+      }
+    }
+    h5 {
+      padding-left: 82px;
+      &::before {
+        content: '';
+        display: block;
+        width: 58px;
+        height: 58px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
