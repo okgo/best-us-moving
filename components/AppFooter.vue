@@ -11,11 +11,11 @@ footer.c-app-footer
         h5 Main Services
         ul
           li
-            nuxt-link(to="/") Interstate Moves
+            nuxt-link(to="/interstate-moves") Interstate Moves
           li
-            nuxt-link(to="/") Commercial Moves
+            nuxt-link(to="/commercial-moves") Commercial Moves
           li
-            nuxt-link(to="/") Warehousing
+            nuxt-link(to="/warehousing") Warehousing
       .col.col--25
         h5 Contacts
         contacts

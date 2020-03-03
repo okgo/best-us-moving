@@ -76,3 +76,22 @@
     }
   }
 }
+
+.interstate-moves-page,
+.commercial-moves-page {
+  .c-services-section {
+    position: relative;
+    padding-top: 0;
+    &::before {
+      content: '';
+      display: block;
+      width: 235px;
+      height: 3px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url('/img/top-services-bg.png') no-repeat;
+    }
+  }
+}

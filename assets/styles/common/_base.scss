@@ -253,3 +253,29 @@ main.main { position: relative; }
   }
   > * { position: relative; }
 }
+
+.text-article {
+  padding: 60px 0;
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .text {
+      padding-right: 40px;
+      max-width: 600px;
+      width: 50%;
+      p {
+        margin-top: 15px;
+        &:first-child { margin-top: 0; }
+      }
+    }
+    .image {
+      width: 50%;
+      max-width: 600px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
