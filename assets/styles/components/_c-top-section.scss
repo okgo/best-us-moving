@@ -3,7 +3,9 @@
   padding: 240px 10px 280px;
   width: 100%;
   text-align: center;
-  background: url('/img/main-img.jpg') center center no-repeat;
+  background-image: url('/img/main-img.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   h4 { margin-top: 50px; }
   @include wide {
@@ -19,13 +21,13 @@
 }
 
 .interstate-moves-page {
-  .c-top-section { background: url('/img/interstate-moves-big.jpg') center center no-repeat; }
+  .c-top-section { background-image: url('/img/interstate-moves-big.jpg'); }
 }
 
 .commercial-moves-page {
-  .c-top-section { background: url('/img/commercial-moves-big.jpg') center center no-repeat; }
+  .c-top-section { background-image: url('/img/commercial-moves-big.jpg'); }
 }
 
 .warehousing-page {
-  .c-top-section { background: url('/img/warehousing-big.jpg') center center no-repeat; }
+  .c-top-section { background-image: url('/img/warehousing-big.jpg'); }
 }
