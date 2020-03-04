@@ -5,6 +5,9 @@
 .c-modal {
   position: relative;
   padding: 30px;
+  @include mobile {
+    padding: 20px 10px;
+  }
   &__close {
     position: absolute;
     right: 10px;

@@ -3,11 +3,35 @@
   text-align: center;
   background: url('/img/about-bg.jpg') center center no-repeat;
   background-size: cover;
+  @include desktop {
+    padding: 60px 0 80px;
+  }
   .container { max-width: 1220px; }
   h2, p { color: #fff; }
-  h2 { margin-bottom: 50px; }
+  h2 {
+    margin-bottom: 50px;
+    @include desktop {
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
   p {
     font-size: 24px;
     line-height: 30px;
+    @include desktop {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    @include tablet {
+      font-size: 16px;
+      line-height: 22px;
+      display: inline;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 20px
+    }
   }
 }

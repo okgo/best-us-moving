@@ -4,6 +4,7 @@
     transition="nice-modal-fade"
     :delay="100"
     height="auto"
+    :adaptive="true"
     :scrollable="true")
     .c-modal
       a.c-modal__close(

@@ -1,14 +1,35 @@
 .c-contacts-section {
   padding: 80px 0 115px;
+  @include desktop {
+    padding: 60px 0 80px;
+  }
+  @include tablet {
+    padding: 40px 0;
+  }
   h2 { text-align: center; }
   ul {
     display: flex;
     flex-direction: row;
+    @include tablet {
+      flex-direction: column;
+    }
     li {
       position: relative;
       margin-top: 60px;
       padding-left: 124px;
       width: 33.3333%;
+      @include desktop {
+        margin-top: 40px;
+        padding-left: 104px;
+      }
+      @include tablet {
+        width: 100%;
+        max-width: 320px;
+        padding-left: 0;
+        padding-top: 80px;
+        margin: 40px auto 0 auto;
+        text-align: center;
+      }
       .ico {
         display: block;
         width: 100px;
@@ -21,11 +42,27 @@
         &--clock { background-image: url('/img/icons/ico-clock.svg'); }
         &--phone { background-image: url('/img/icons/ico-phone.svg'); }
         &--pin { background-image: url('/img/icons/ico-pin.svg'); }
+        @include desktop {
+          width: 80px;
+          height: 80px;
+        }
+        @include tablet {
+          width: 60px;
+          height: 60px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
-      h6 { margin-bottom: 16px; }
+      h6 {
+        margin-bottom: 16px;
+        @include tablet {
+          margin-bottom: 10px;
+        }
+      }
       p {
         margin-top: 5px;
         max-width: 240px;
+        max-width: none;
       }
       a {
         color: $text-color;

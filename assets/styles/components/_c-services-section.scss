@@ -1,6 +1,12 @@
 .c-services-section {
   padding: 80px 0;
   h2 { text-align: center; }
+  @include desktop {
+    padding: 60px 0;
+  }
+  @include tablet {
+    padding: 40px 0;
+  }
 }
 
 .services-list {
@@ -50,28 +56,72 @@
       color: #fff;
       z-index: 10;
     }
+    @include tablet {
+      padding: 25px 20px;
+    }
   }
   li {
     position: relative;
     max-width: 680px;
     margin-top: 80px;
     width: 50%;
-    &:nth-child(2n+1) { padding-right: 60px; }
-    &:nth-child(2n) { padding-left: 60px; }
+    @include wide {
+      margin-top: 60px;
+    }
+    @include tablet {
+      margin-top: 20px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    &:nth-child(2n+1) {
+      padding-right: 60px;
+      @include wide {
+        padding-right: 30px;
+      }
+      @include desktop {
+        padding-right: 10px;
+      }
+      @include tablet {
+        padding-right: 5px;
+      }
+    }
+    &:nth-child(2n) {
+      padding-left: 60px;
+      @include wide {
+        padding-left: 30px;
+      }
+      @include desktop {
+        padding-left: 10px;
+      }
+      @include tablet {
+        padding-left: 5px;
+      }
+    }
     p, a {
       font-size: 16px;
       line-height: 20px;
       color: #fff;
+      @include desktop {
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
     h5, a { font-weight: 500; }
     p {
       margin-top: 32px;
       max-width: 370px;
+      @include tablet {
+        margin-top: 20px;
+      }
     }
     .link {
       padding-top: 65px;
       margin-top: auto;
       display: flex;
+      @include tablet {
+        padding-top: 20px;
+      }
     }
     a {
       display: inline-block;
@@ -99,14 +149,23 @@
         position: absolute;
         left: 0;
         top: 50%;
+        background-size: 100% 100%;
         transform: translateY(-50%);
+        @include tablet {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      @include tablet {
+        padding-left: 50px;
       }
     }
   }
 }
 
 .interstate-moves-page,
-.commercial-moves-page {
+.commercial-moves-page,
+.warehousing-page {
   .c-services-section {
     position: relative;
     padding-top: 0;
