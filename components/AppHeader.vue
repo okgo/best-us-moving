@@ -9,7 +9,9 @@ header.c-app-header
           socials
       .logo-row
         nuxt-link.logo(to="/")
-        a.button(href="#") Get a quote now
+        a.button(
+          href="#"
+          @click.prevent="show") Get a quote now
   .c-app-header__bottom
     .container
       ul.menu
@@ -46,6 +48,11 @@ export default {
           link: '/#contacts'
         }
       ]
+    }
+  },
+  methods: {
+    show () {
+      this.$modal.show('hello-world')
     }
   }
 }

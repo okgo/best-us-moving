@@ -1,5 +1,6 @@
 
 export default {
+  mode: 'universal',
   /*
   ** Router configuration
   */
@@ -31,7 +32,6 @@ export default {
       return { x: 0, y: 0 }
     }
   },
-  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -67,8 +67,7 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: ['~plugins/vue-js-modal'],
   /*
   ** Nuxt.js dev-modules
   */

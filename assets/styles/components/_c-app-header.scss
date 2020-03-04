@@ -30,7 +30,7 @@
       color: $white-color;
       opacity: .5;
       &:hover { opacity: .75; }
-      &.nuxt-link-active { opacity: 1; }
+      &.nuxt-link-exact-active { opacity: 1; }
     }
   }
 }

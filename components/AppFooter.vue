@@ -20,7 +20,9 @@ footer.c-app-footer
         h5 Contacts
         contacts
       .col.col--25
-        a.button(href="#") Get a quote now
+        a.button(
+          href="#"
+          @click.prevent="show") Get a quote now
         p.copyright {{ year }} © BEST US MOVING
 </template>
 
@@ -37,6 +39,11 @@ export default {
     const date = new Date()
     const year = date.getFullYear()
     return { year }
+  },
+  methods: {
+    show () {
+      this.$modal.show('hello-world')
+    }
   }
 }
 </script>
