@@ -6,7 +6,7 @@ footer.c-app-footer
     .container
       .col.col--25
         .logo
-        socials
+        //- socials
       .col.col--25
         h5 Main Services
         ul

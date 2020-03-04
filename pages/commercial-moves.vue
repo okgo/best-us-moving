@@ -30,6 +30,7 @@ main.main
 import TopSection from '@/components/TopSection.vue'
 
 export default {
+  transition: 'intro',
   components: {
     TopSection
   },

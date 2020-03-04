@@ -3,7 +3,8 @@ main.main
   top-section(
     heading="NEW HOME IS WHERE YOUR STORY BEGINS"
     subheading="Let us move you to your new beginning")
-  services-section
+  #services
+    services-section
   about-section
   contacts-section
 </template>
@@ -15,6 +16,7 @@ import ContactsSection from '@/components/ContactsSection.vue'
 import ServicesSection from '@/components/ServicesSection.vue'
 
 export default {
+  transition: 'intro',
   components: {
     TopSection,
     AboutSection,
@@ -31,4 +33,5 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+</style>

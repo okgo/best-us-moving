@@ -1,5 +1,5 @@
 <template lang="pug">
-section.c-services-section#services
+section.c-services-section
   .container
     h2 <span>SHIPPING</span> TO & FROM <span>ANYWHERE</span>
     ul.services-list

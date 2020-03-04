@@ -9,9 +9,9 @@ ul.c-contacts
       phone-ico
       |833 238 7887
   li
-    a(href="mailto:alldirectionsleads@gmail.com")
+    a(href="mailto:bestusmovinginc@gmail.com")
       letter-ico
-      |alldirectionsleads@gmail.com
+      |bestusmovinginc@gmail.com
 </template>
 
 <script>

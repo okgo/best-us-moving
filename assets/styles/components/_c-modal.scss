@@ -1,3 +1,24 @@
-.v--modal {
-  border-radius: 0;
+.v--modal { border-radius: 0; }
+
+.v--modal-overlay { background: rgba(0, 0, 0, 0.5) }
+
+.c-modal {
+  position: relative;
+  padding: 30px;
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  h4 {
+    color: $green-text;
+    font-weight: 700;
+    text-align: center;
+  }
+  .row {
+    margin-top: 20px;
+  }
 }
