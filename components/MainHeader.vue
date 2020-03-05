@@ -16,7 +16,9 @@ header.c-app-header
     .container
       ul.menu
         li(v-for="link in links")
-          nuxt-link(:to="`/${link.link}`") {{ link.text }}
+          a(
+            :href="`/${link.link}`"
+            v-scroll-to="{ el: link.link, duration: 600 }") {{ link.text }}
 </template>
 
 <script>
