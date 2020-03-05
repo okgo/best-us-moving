@@ -1,7 +1,7 @@
 <template lang="pug">
 footer.c-app-footer
   .c-app-footer__top
-    img(src="img/footer-img.png" alt="Best Us Moving")
+    img(src="/img/footer-img.png" alt="Best Us Moving")
   .c-app-footer__bottom
     .container
       .col.col--25
