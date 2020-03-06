@@ -3,7 +3,7 @@
   main-header
   main.main#top
     top-section(
-      heading="NEW HOME IS WHERE YOUR STORY BEGINS"
+      heading="We know the best ways to move you"
       subheading="Let us move you to your new beginning")
     #services
       services-section
