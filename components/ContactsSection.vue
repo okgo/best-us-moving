@@ -22,7 +22,7 @@ section.c-contacts-section#contacts
         .text
           h6 Main Office
           p
-            b 2875 7 Daleron place, South Amboy, NJ, 08879
+            b 7 Daleron place, South Amboy, NJ, 08879
 </template>
 
 <script>
