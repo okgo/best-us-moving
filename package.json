@@ -12,9 +12,9 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "vue-js-modal": "^1.3.33",
-    "vue-scrollto": "^2.17.1"
+    "nuxt": "^2.16.2",
+    "vue-js-modal": "^2.0.1",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
@@ -22,10 +22,10 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-plugin-nuxt": ">=0.4.2",
-    "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^8.0.2"
+    "sass": "^1.49.7",
+    "sass-loader": "^10.2.1"
   }
 }

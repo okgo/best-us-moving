@@ -20,7 +20,7 @@ export default {
       { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/img/favicons/favicon-96x96.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/favicons/favicon-16x16.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap' }
-    ],
+    ]
   },
   /*
   ** Customize the progress-bar color
@@ -37,8 +37,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/vue-js-modal',
-    '~plugins/vue-scroll-to'
+    { src: '~plugins/vue-js-modal', mode: 'client' },
+    { src: '~plugins/vue-scroll-to', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
