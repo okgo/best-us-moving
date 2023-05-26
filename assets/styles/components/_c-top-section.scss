@@ -1,22 +1,28 @@
 .c-top-section {
   position: relative;
-  padding: 240px 10px 280px;
+  padding: 100px 10px 140px;
   width: 100%;
   text-align: center;
   background-image: url('/img/main-img.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  h4 { margin-top: 50px; }
+
   @include wide {
     padding: 180px 10px;
   }
+
   @include tablet {
     padding: 120px 10px;
-    h4 { margin-top: 30px; }
   }
+
   @include mobile {
     padding: 80px 10px;
+  }
+
+  .c-quote-form {
+    margin: 20px auto 0;
+    text-align: left;
   }
 }
 

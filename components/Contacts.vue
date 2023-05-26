@@ -1,17 +1,21 @@
 <template lang="pug">
 ul.c-contacts
+  //- li
+  //-   a(href="tel:83 38 BEST US")
+  //-     phone-ico
+  //-     |83 38 BEST US
+  //- li
+  //-   a(href="tel:8338237887")
+  //-     phone-ico
+  //-     |833 823 7887
   li
-    a(href="tel:83 38 BEST US")
+    a(href="tel:8352053025")
       phone-ico
-      |83 38 BEST US
+      |835 205 3025
   li
-    a(href="tel:833 238 7887")
-      phone-ico
-      |833 238 7887
-  li
-    a(href="mailto:bestusmovinginc@gmail.com")
+    a(href="mailto:quote@bestusmovinginc.com")
       letter-ico
-      |bestusmovinginc@gmail.com
+      |quote@bestusmovinginc.com
 </template>
 
 <script>

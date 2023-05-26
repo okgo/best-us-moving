@@ -1,6 +1,5 @@
 
 export default {
-  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -38,7 +37,8 @@ export default {
   */
   plugins: [
     { src: '~plugins/vue-js-modal', mode: 'client' },
-    { src: '~plugins/vue-scroll-to', mode: 'client' }
+    { src: '~plugins/vue-scroll-to', mode: 'client' },
+    { src: '~/plugins/vuelidate.js' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -51,7 +51,14 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/toast'
   ],
+  toast: {
+    theme: 'toasted-primary',
+    position: 'top-right',
+    duration: 5000
+  },
   /*
   ** Build configuration
   */

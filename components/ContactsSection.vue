@@ -13,21 +13,22 @@ section.c-contacts-section#contacts
         span.ico.ico--phone
         .text
           h6 Call Us
+          //- p
+          //-   a(href="tel:83 38 BEST US") 83 38 BEST US
+          //- p
+          //-   a(href="tel:8338237887") 833 823 7887
           p
-            a(href="tel:83 38 BEST US") 83 38 BEST US
-          p
-            a(href="tel:833 238 7887") 833 238 7887
+            a(href="tel:8352053025") 835 205 3025
       li
         span.ico.ico--pin
         .text
           h6 Main Office
           p
-            b 7 Daleron place, South Amboy, NJ, 08879
+            b 1076 B Park RD, Brandon PA 19510
 </template>
 
 <script>
 export default {
-
 }
 </script>
 

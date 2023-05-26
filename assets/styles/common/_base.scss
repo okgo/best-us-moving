@@ -166,7 +166,6 @@ a {
   &:hover { opacity: .75; }
 }
 
-button,
 .button {
   display: inline-block;
   vertical-align: top;
@@ -213,6 +212,33 @@ label {
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+select {
+  width: 100%;
+  padding: 11px 16px;
+  border: 1px solid $green-bg;
+  background: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  appearance: none;
+  color: $text-color;
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: $text-color transparent transparent transparent;
+  }
 }
 
 .mobile {
@@ -466,5 +492,37 @@ $t-delay: 300ms;
   &::after {
     transform: scaleX(0);
     transform-origin: right;
+  }
+}
+
+.toasted-container {
+  max-width: 290px;
+
+  .toasted {
+    &.toasted-primary {
+      padding: 10px 15px;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.error {
+  select,
+  input,
+  textarea {
+    border-color: red;
+  }
+}
+
+.validation-texts {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    color: red;
   }
 }

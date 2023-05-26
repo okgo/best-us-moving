@@ -1,0 +1,47 @@
+.c-quote-form {
+  background-color: #fff;
+  max-width: 600px;
+  padding: 30px;
+
+  @include mobile {
+    padding: 20px 10px;
+  }
+
+  h4 {
+    color: $green-text;
+    font-weight: 700;
+    text-align: center;
+  }
+  .row {
+    margin-top: 20px;
+  }
+
+  .col {
+    position: relative;
+    width: 50%;
+
+    &:nth-child(2n) {
+      padding-left: 10px;
+
+      @include mobile {
+        padding-left: 5px;
+      }
+
+      .validation-texts {
+        left: 10px;
+
+        @include mobile {
+          left: 5px;
+        }
+      }
+    }
+
+    &:nth-child(2n + 1) {
+      padding-right: 10px;
+
+      @include mobile {
+        padding-right: 5px;
+      }
+    }
+  }
+}

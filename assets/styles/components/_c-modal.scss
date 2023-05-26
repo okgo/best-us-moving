@@ -4,10 +4,7 @@
 
 .c-modal {
   position: relative;
-  padding: 30px;
-  @include mobile {
-    padding: 20px 10px;
-  }
+
   &__close {
     position: absolute;
     right: 10px;
@@ -15,13 +12,5 @@
     font-size: 30px;
     line-height: 20px;
     font-weight: 700;
-  }
-  h4 {
-    color: $green-text;
-    font-weight: 700;
-    text-align: center;
-  }
-  .row {
-    margin-top: 20px;
   }
 }

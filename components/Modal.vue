@@ -10,24 +10,16 @@ modal(
     a.c-modal__close(
       href="#"
       @click.prevent="$modal.hide('hello-world')") &#10005;
-    h4 Talk to us
-    form(method="POST" action="https://formspree.io/bestusmovinginc@gmail.com")
-      .row
-        label Name
-        input(type="text" placeholder="Name" required="required")
-      .row
-        label E-mail
-        input(type="email" placeholder="E-mail" required="required")
-      .row
-        label Message
-        textarea(placeholder="Message" required="required")
-      .row
-        button.button(type="submit") Send
+    quote-form
 </template>
 
 <script>
-export default {
+import QuoteForm from '@/components/QuoteForm'
 
+export default {
+  components: {
+    QuoteForm
+  }
 }
 </script>
 

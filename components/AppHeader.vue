@@ -6,7 +6,7 @@ header.c-app-header
         .contacts-row__contacts
           contacts.c-contacts--row
         .contacts-row__socials
-          //- socials
+          socials
       .logo-row
         nuxt-link.logo(to="/")
         a.button(
