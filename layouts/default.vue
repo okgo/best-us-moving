@@ -1,7 +1,8 @@
 <template lang="pug">
-  .wrapper
-    nuxt
-    app-footer
+.wrapper
+  nuxt
+  app-footer
+  client-only
     modal
 </template>
 

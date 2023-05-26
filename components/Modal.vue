@@ -2,8 +2,8 @@
 modal(
   name="hello-world"
   transition="nice-modal-fade"
-  :delay="100"
   height="auto"
+  :delay="100"
   :adaptive="true"
   :scrollable="true")
   .c-modal
