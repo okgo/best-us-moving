@@ -135,8 +135,7 @@ export default {
 
       return date <= yesterday
     },
-    submitForm () {
-      console.log(this.$v)
+    async submitForm () {
       this.$v.$touch()
       if (this.$v.$invalid) { return this.$toast.error('Please fill form with correct data') }
       const data = {
@@ -150,25 +149,23 @@ export default {
         last_name: this.lastName
       }
 
-      console.log(123, data)
+      try {
+        await this.$axios.post(this.endpoint, data)
+        this.$toast.success('We are working on your request and will get in touch as soon as possible.')
 
-      // try {
-      //   await this.$axios.post(this.endpoint, data)
-      //   this.$toast.success('We are working on your request and will get in touch as soon as possible.')
+        this.time = null
+        this.size = ''
+        this.movingFrom = null
+        this.movingTo = null
+        this.email = null
+        this.phoneNumber = null
+        this.firstName = null
+        this.lastName = null
+      } catch (e) {
+        this.$toast.error('Oops, something went wrong. Please try again or contact our team.')
 
-      //   this.time = null
-      //   this.size = ''
-      //   this.movingFrom = null
-      //   this.movingTo = null
-      //   this.email = null
-      //   this.phoneNumber = null
-      //   this.firstName = null
-      //   this.lastName = null
-      // } catch (e) {
-      //   this.$toast.error('Oops, something went wrong. Please try again or contact our team.')
-
-      //   console.error(e)
-      // }
+        console.error(e)
+      }
     }
   },
   validations: {
