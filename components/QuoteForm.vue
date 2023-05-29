@@ -161,6 +161,8 @@ export default {
         this.phoneNumber = null
         this.firstName = null
         this.lastName = null
+
+        this.$v.$reset()
       } catch (e) {
         this.$toast.error('Oops, something went wrong. Please try again or contact our team.')
 
