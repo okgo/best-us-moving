@@ -6,8 +6,10 @@
   @include tablet {
     padding: 40px 0;
   }
+
   h2 { text-align: center; }
-  ul {
+
+  ul:not(.c-socials) {
     display: flex;
     flex-direction: row;
     @include tablet {
@@ -68,6 +70,20 @@
         color: $text-color;
         font-weight: 700;
       }
+    }
+  }
+
+  .c-socials {
+    display: none;
+    margin-top: 30px;
+    justify-content: center;
+
+    @include mobile {
+      display: flex;
+    }
+
+    li {
+      &:first-child { margin-left: 0; }
     }
   }
 }

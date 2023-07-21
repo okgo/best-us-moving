@@ -1,20 +1,25 @@
 .c-app-header {
   &__top {
     padding-top: 32px;
+
     @include tablet {
       padding-top: 10px;
     }
+
     @include mobile {
       padding-top: 0;
     }
+
     .contacts-row {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
       @include mobile {
         display: none;
       }
     }
+
     .logo-row {
       padding: 24px 0 16px;
       display: flex;

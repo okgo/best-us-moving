@@ -25,10 +25,16 @@ section.c-contacts-section#contacts
           h6 Main Office
           p
             b 1076 B Park RD, Brandon PA 19510
+    socials
 </template>
 
 <script>
+import Socials from '@/components/Socials.vue'
+
 export default {
+  components: {
+    Socials
+  }
 }
 </script>
 
