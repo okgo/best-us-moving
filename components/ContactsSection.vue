@@ -18,7 +18,7 @@ section.c-contacts-section#contacts
           //- p
           //-   a(href="tel:8338237887") 833 823 7887
           p
-            a(href="tel:8352053025") 835 205 3025
+            a(href="tel:+18143511131") +18143511131
       li
         span.ico.ico--pin
         .text

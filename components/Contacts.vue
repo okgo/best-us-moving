@@ -9,9 +9,9 @@ ul.c-contacts
   //-     phone-ico
   //-     |833 823 7887
   li
-    a(href="tel:8352053025")
+    a(href="tel:+18143511131")
       phone-ico
-      |835 205 3025
+      |+18143511131
   li
     a(href="mailto:quote@bestusmovinginc.com")
       letter-ico
