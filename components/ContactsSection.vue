@@ -18,13 +18,13 @@ section.c-contacts-section#contacts
           //- p
           //-   a(href="tel:8338237887") 833 823 7887
           p
-            a(href="tel:+18143511131") +18143511131
+            a(href="tel:+14845507945") +1484-550-7945
       li
         span.ico.ico--pin
         .text
           h6 Main Office
           p
-            b 1076 B Park RD, Brandon PA 19510
+            b 1076 B Park RD, Blandon PA 19510
     socials
 </template>
 
